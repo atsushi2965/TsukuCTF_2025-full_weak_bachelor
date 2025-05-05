@@ -34,7 +34,7 @@ Nichi10pです。本業(?)は競技プログラマーですが、YouTubeの[脆�
 [Telegramの投稿](https://t.me/etozp/19319)の写真に写った、戦争で破壊された学校を特定する課題です。\
 投稿本文のウクライナ語を一語一語Google翻訳で英語に訳して、良さげな検索ワードを考えます。「学校」の意味と固有名詞をいい感じに含む гімназію Степненської громади (gymnasium Stepnenskaya communities) としました。これを duckduckgo.com で検索します。\
 私の前に調べを進めていた @shion さんからの不正解報告を目grepで除いていくと https://zp.isuo.org/schools/view/id/830 が気になります。\
-情勢のためかアクセスがブロックされるので Web Archive (https:///web.archive.org/web/20220126043917/https://zp.isuo.org/schools/view/id/830) で閲覧 (@shion さんからの入れ知恵) し、Поштова адреса (Postal code) を入手します。\
+情勢のためかアクセスがブロックされるので [Web Archive](https:///web.archive.org/web/20220126043917/https://zp.isuo.org/schools/view/id/830) で閲覧 (@shion さんからの入れ知恵) し、Поштова адреса (Postal code) を入手します。\
 Googleマップで周辺を見るとそれっぽい建物があるので、URL (https://www.google.com/maps/place/47°47'53.8%22N+35°18'40.4%22E/@47.7973071,35.3037427,1314m) から緯度・経度を得て、FLAGを構築すると、正解でした。
 
 ## crypto
