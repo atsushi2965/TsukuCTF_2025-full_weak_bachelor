@@ -12,7 +12,7 @@ by **full_weak_bachelor**, a Japanese student team from [full_weak_engineer](//y
 こんにちは。初めまして。ゆう猫([@yuneko1127](https://github.com/yuneko1127))です。TsukuCTFで初めてチームでオープンなCTFに参加したので、ついでにWriteupを書きます。CTF歴は、picoCTFの過去問などに手を出して、SecHack365期間中に内部で行われたCTFに少しだけ参加したくらいの初心者です。弱かったため、OSINTのmedium以下しか解けなかった。他のものにも挑んだので、writeupで復習したいと思ってます。
 
 ### Nichi10p
-Nichi10pです。本業(?)は競技プログラマーですが、YouTubeの[脆弱エンジニアの日常](https://www.youtube.com/@full-weak-engineer)チャンネルで開催された[リアルトリリオンゲーム](https://www.youtube.com/watch?v=Rhf34cOgkzA)企画に乗っかって参加した SECCON CTF 13 をきっかけに、CTFにも手を出しはじめました。
+Nichi10pです。本業(?)は競技プログラマーですが、YouTubeの[脆弱エンジニアの日常](https://www.youtube.com/@full-weak-engineer)チャンネルで開催された[リアルトリリオンゲーム](https://www.youtube.com/watch?v=Rhf34cOgkzA)企画に乗っかって参加した SECCON CTF 13 をきっかけに、CTFにも手を出しはじめました。\
 イベント型CTFは3回目の参加でした (2回目は picoCTF 2025) 。
 
 ### Shion_erqp (shion)
@@ -31,10 +31,10 @@ Nichi10pです。本業(?)は競技プログラマーですが、YouTubeの[脆�
 夜の街の写真からその位置を当てる課題でした。看板で目を引いて検索できそうだった、OTiというフライドチキン屋さんを検索し、地図上で探します。一度探したときは、範囲を絞りすぎて探せなくて諦めたのですが、@shionさんがこの辺だと思うので引き取ってくださいと言っていたので、引き取ってもう一度広域にして検索して、店舗の前を何店舗か確認して見つけました。点字ブロックがあったので、ない店はすぐに却下していたら、楽に見つけられました。街灯も映っていたのでそれを参考に位置を合わせて終了です。
 
 ### destroyed (Nichi10p)
-[Telegramの投稿](https://t.me/etozp/19319)の写真に写った、戦争で破壊された学校を特定する課題です。
-投稿本文のウクライナ語を一語一語Google翻訳で英語に訳して、良さげな検索ワードを考えます。「学校」の意味と固有名詞をいい感じに含む гімназію Степненської громади (gymnasium Stepnenskaya communities) としました。これを duckduckgo.com で検索します。
-私の前に調べを進めていた @shion さんからの不正解報告を目grepで除いていくと https://zp.isuo.org/schools/view/id/830 が気になります。
-情勢のためかアクセスがブロックされるので Web Archive (https:///web.archive.org/web/20220126043917/https://zp.isuo.org/schools/view/id/830) で閲覧 (@shion さんからの入れ知恵) し、Поштова адреса (Postal code) を入手します。
+[Telegramの投稿](https://t.me/etozp/19319)の写真に写った、戦争で破壊された学校を特定する課題です。\
+投稿本文のウクライナ語を一語一語Google翻訳で英語に訳して、良さげな検索ワードを考えます。「学校」の意味と固有名詞をいい感じに含む гімназію Степненської громади (gymnasium Stepnenskaya communities) としました。これを duckduckgo.com で検索します。\
+私の前に調べを進めていた @shion さんからの不正解報告を目grepで除いていくと https://zp.isuo.org/schools/view/id/830 が気になります。\
+情勢のためかアクセスがブロックされるので Web Archive (https:///web.archive.org/web/20220126043917/https://zp.isuo.org/schools/view/id/830) で閲覧 (@shion さんからの入れ知恵) し、Поштова адреса (Postal code) を入手します。\
 Googleマップで周辺を見るとそれっぽい建物があるので、URL (https://www.google.com/maps/place/47°47'53.8%22N+35°18'40.4%22E/@47.7973071,35.3037427,1314m) から緯度・経度を得て、FLAGを構築すると、正解でした。
 
 ## crypto
