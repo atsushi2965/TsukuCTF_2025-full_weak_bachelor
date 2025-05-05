@@ -60,6 +60,8 @@ Googleマップで周辺を見るとそれっぽい建物があるので、URL (
 私は以上で解説を書いた分をチームに貢献できる点数としてflagを獲得しました。OSINTのCasca、curveも取り組んで解けましたが、遅かったです(この辺をちゃんと分担できているといいのだろうと思います)。またOSINTのdestroyed、hidden_wpath、easy_kernelも取り組んだのですが、解けませんでした。destroyedは解き切りたかったですね。今後とも、CTFに参加していきたいのでよろしくお願いします。
 
 ### Nichi10p
+destroyed (OSINT) の詰めと xortsukushift (crypto) の全体をやりました。easy_kernel (pwn) や PQC1 (crypto) も解きたかったのですが、力及ばず……\
+OSINT は気づいたらあらかた解かれていて、PQC0 (crypto) も `openssl` をこねこねして悩んでいる間に解かれていたので、みんな自信なさげな割につよいじゃないか！　と思いました。ありがとうございました😊
 
 ### Shion_erqp (shion)
 
