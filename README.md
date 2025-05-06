@@ -20,6 +20,7 @@ Nichi10pです。本業(?)は競技プログラマーですが、YouTubeの[脆�
 イベント型CTFは3回目の参加でした (2回目は picoCTF 2025) 。
 
 ### Shion_erqp (shion)
+shionです。TsukuCTFは[SecHack365](https://sechack365.nict.go.jp/)から[生まれたCTF](https://xryuseix.hatenablog.com/entry/2021/09/15/000412)であり、X(旧Twitter)上で盛り上がっていたので、流れに乗って参加しました。今回は2度目の開催で、問題の質・種類ともにより良くなっていたと感じました。運営の方々ありがとうございました。
 
 
 ## osint
@@ -151,11 +152,39 @@ $$K_i=\begin{cases}\mathtt{key}\_i&i<\mathtt{len}\left(\mathtt{key}\right)\\\C_{
 
 
 ## web
+### len_len (shion)
+以下のような問題ファイルが与えられました。
+```js
+function chall(str = "[1, 2, 3]") {
+  const sanitized = str.replaceAll(" ", "");
+  if (sanitized.length < 10) {
+    return `error: no flag for you. sanitized string is ${sanitized}, length is ${sanitized.length.toString()}`;
+  }
+  const array = JSON.parse(sanitized);
+  if (array.length < 0) {
+    // hmm...??
+    return FLAG;
+  }
+  return `error: no flag for you. array length is too long -> ${array.length}`;
+}
+```
+入力値を`.replaceAll(" ", "")`でサニタイズした後の文字列の長さが0以下(`array.length`)になるとFlagがもらえるようです。
+しかし、文字列の長さがマイナスになる値など存在しません。よく見ると、文字列の長さチェックは`array.length`で行われています。実は、JavaScriptの辞書型を用いることで`.length`を上書きすることが可能です。
+```
+"hoge".length  // 4
+{'length': -1}.length  // -1
+```
+ということで次のようなcURLを叩いてFLAG取得しました
+```
+curl http://(省略) -d 'array={"length":-1}'
+```
+`TsukuCTF25{l4n_l1n_lun_l4n_l0n}`
+
 ### flash (Atsushi2965)
 はい､これもChatGPTの力を御借りしました｡\
 どうやら`seed`と`session_id`から各ラウンドの数字を求めているらしいので､アクセスしながらクッキーを取得して同じ計算を自分ですれば良い､という事だそうですね｡
 
-`seed`はどうするのかって？　実は`seed.txt`はURL直で書けば見れる様になっていたんですね｡脆弱だな～！
+`seed`はどうするのかって？　実は`seed.txt`はURL直で開けば見れる様になっていたんですね｡脆弱だな～！
 
 ### YAMLwaf (Atsushi2965)
 此方､hardだったので無理かなぁと思いきや､根気良くChatGPTに聞いてみたら､なんと解けてしまいました｡
@@ -180,6 +209,11 @@ destroyed (OSINT) の詰めと xortsukushift (crypto) の全体をやりまし�
 OSINT は気づいたらあらかた解かれていて、PQC0 (crypto) も `openssl` をこねこねして悩んでいる間に解かれていたので、みんな自信なさげな割につよいじゃないか！　と思いました。ありがとうございました😊
 
 ### Shion_erqp (shion)
+今回は他メンバーの解くスピードが早く全く使い物になりませんでした…
+最近DOM clobberingを学んでいたおかげで、`len_len`で2nd solveを獲得できたことだけがちっぽけな誇りです。
+同メンバーのwriteupを見ると私の貢献も記述してくれて優しいメンバーだなと感動しました。
+次はhard問をカッコよく解けるくらいの実力をつけて仲間に貢献したいです。頑張ります。
+皆さん、ありがとうございました！
 
 ### Atsushi2965
 なんか結果的に私が一番多く解いていました｡まぁ初心者も初心者なので簡単な物を率先して解くのは正しいっちゃ正しいんじゃないでしょうか｡
