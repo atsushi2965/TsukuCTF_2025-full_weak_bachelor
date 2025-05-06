@@ -5,7 +5,7 @@ SEED = bytes.fromhex(
     '19770b1c9b741dd44acbafd4bc6d1aab'
     'c1b9378f3b68ac345535673fcf07f089'
     'a8492dc1b05343a80b3d002f070771c6'
-)
+)  # http://challs.tsukuctf.org:50000/static/seed.txt
 
 TOTAL_ROUNDS      = 10
 DIGITS_PER_ROUND  = 7
