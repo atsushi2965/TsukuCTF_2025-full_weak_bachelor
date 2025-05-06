@@ -7,7 +7,7 @@ by **full_weak_bachelor**, a Japanese student team from [full_weak_engineer](//y
 [<img src="http://github.com/shion0503.png" alt="@shion0503" width=64 height=64 title="Shion_erqp">](//github.com/shion0503)
 
 27th place of all, 8th place of Japanese students
-<img src="Top 10 Teams-pil-oxi.png" alt="Top 10 Teams (of Japanese Students)" title="Top 10 Teams (of Japanese Students)" style="background-color: white;">
+<img src="Top 10 Teams_opaque-pil-oxi.png" alt="Top 10 Teams (of Japanese Students)" title="Top 10 Teams (of Japanese Students)">
 ## 自己紹介
 ### Atsushi2965
 インターネットの皆さんこんにちは､Atsushi2965です｡picoCTFすら触った事の無い文字通り脆弱な情報工学生ですが､なんかアスースンさんに暫定リーダーを任されたので最後まで張り切りました｡運良く1000近くポイントを獲れて嬉しみに浸っている所です｡
