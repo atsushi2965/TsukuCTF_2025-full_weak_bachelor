@@ -20,7 +20,7 @@ Nichi10pです。本業(?)は競技プログラマーですが、YouTubeの[脆�
 イベント型CTFは3回目の参加でした (2回目は picoCTF 2025) 。
 
 ### Shion_erqp (shion)
-shionです。TsukuCTFは[SecHack365](https://sechack365.nict.go.jp/)から[生まれたCTF](https://xryuseix.hatenablog.com/entry/2021/09/15/000412)であり、X(旧Twitter)上で盛り上がっていたので、流れに乗って参加しました。今回は2度目の開催で、問題の質・種類ともにより良くなっていたと感じました。運営の方々ありがとうございました。
+shionです。TsukuCTFは[SecHack365](https://sechack365.nict.go.jp/)から[生まれたCTF](https://xryuseix.hatenablog.com/entry/2021/09/15/000412)であり、X(旧Twitter)上で盛り上がっていたので、流れに乗って参加しました。今回は2度目の参加で、以前よりも問題の質・種類ともにより良くなっていたと感じました。運営の方々ありがとうございました。
 
 
 ## osint
